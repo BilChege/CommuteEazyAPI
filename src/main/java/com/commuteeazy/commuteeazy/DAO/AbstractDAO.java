@@ -45,7 +45,8 @@ public abstract class AbstractDAO<T,I extends Serializable> implements GenericDA
 
     @Override
     public T merge(T t) {
-        return (T) sessionFactory.getCurrentSession().merge(t);
+        sessionFactory.getCurrentSession().update(t);
+        return t;
     }
 
     @Override

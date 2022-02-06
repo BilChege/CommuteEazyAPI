@@ -12,6 +12,7 @@ import org.hibernate.criterion.Restrictions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -30,14 +31,35 @@ public class UserController {
     @Qualifier("usersService")
     private GenericService usersService;
     
-    @RequestMapping(path = "/saveuser",method = RequestMethod.POST,consumes = MediaType.APPLICATION_JSON_VALUE,produces = MediaType.APPLICATION_JSON_VALUE)
-    public Users addUser(@RequestBody Users user){
-        return (Users) usersService.save(user);
+    @RequestMapping(path = "/saveuser/{mode}",method = RequestMethod.POST,consumes = MediaType.APPLICATION_JSON_VALUE,produces = MediaType.APPLICATION_JSON_VALUE)
+    public Users addUser(@RequestBody Users user,@PathVariable("mode") int mode){
+        System.out.println("User ID: "+user.getId());
+        Users response;
+        if(mode == 0){
+            System.out.println("Mode: save");
+            response = (Users) usersService.save(user);
+        } else {
+            System.out.println("Mode: merge");
+            Users saved = (Users) usersService.findbyId(user.getId());
+            saved.setUsername(user.getUsername());
+            saved.setEmailAddress(user.getEmailAddress());
+            saved.setPhone(user.getPhone());
+            saved.setAccountpassword(user.getAccountpassword());
+            response = (Users) usersService.merge(saved);
+        }
+        return response;
     }
     
     @RequestMapping(path = "/login",method = RequestMethod.GET,produces = MediaType.APPLICATION_JSON_VALUE)
     public Users loginUser(@RequestParam("username") String username,@RequestParam("password")String password){
-        return (Users) usersService.findByCriterion(Restrictions.eq("username", username),Restrictions.eq("accountpassword", password)).get(0);
+        Users user = new Users();
+        List<Users> users = usersService.findByCriterion(Restrictions.eq("username", username),Restrictions.eq("accountpassword", password));
+        if (users.size() > 0) {
+            user = users.get(0);
+        } else {
+            user.setId(-1);
+        }
+        return user;
     }
     
     @RequestMapping(path = "/allusers",method = RequestMethod.GET,produces = MediaType.APPLICATION_JSON_VALUE)

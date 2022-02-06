@@ -61,8 +61,7 @@ public class RoutesController {
             }
         }
         return response;
-    }
-    
+    }  
     
     
     @GetMapping(path = "/place/{routeid}",produces = MediaType.APPLICATION_JSON_VALUE)

@@ -2,6 +2,7 @@ package com.commuteeazy.commuteeazy.Domain;
 // Generated Oct 13, 2021 10:14:56 AM by Hibernate Tools 4.3.1
 
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -16,6 +17,7 @@ import javax.persistence.Table;
 @Table(name="users"
     ,schema="public"
 )
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Users  implements java.io.Serializable {
 
 

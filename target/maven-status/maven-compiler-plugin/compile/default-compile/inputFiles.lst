@@ -5,6 +5,7 @@ C:\Users\BilChege\Documents\NetBeansProjects\Commuteeazy\src\main\java\com\commu
 C:\Users\BilChege\Documents\NetBeansProjects\Commuteeazy\src\main\java\com\commuteeazy\commuteeazy\DAOHelper\RolesDAO.java
 C:\Users\BilChege\Documents\NetBeansProjects\Commuteeazy\src\main\java\com\commuteeazy\commuteeazy\DAOImpl\RolesDAOImpl.java
 C:\Users\BilChege\Documents\NetBeansProjects\Commuteeazy\src\main\java\com\commuteeazy\commuteeazy\DAOImpl\RouteDAOImpl.java
+C:\Users\BilChege\Documents\NetBeansProjects\Commuteeazy\src\main\java\com\commuteeazy\commuteeazy\Controller\VerificationController.java
 C:\Users\BilChege\Documents\NetBeansProjects\Commuteeazy\src\main\java\com\commuteeazy\commuteeazy\DAOHelper\VehicleDAO.java
 C:\Users\BilChege\Documents\NetBeansProjects\Commuteeazy\src\main\java\com\commuteeazy\commuteeazy\Domain\MatatuOperator.java
 C:\Users\BilChege\Documents\NetBeansProjects\Commuteeazy\src\main\java\com\commuteeazy\commuteeazy\CustomObjects\CustomRoute.java
@@ -29,5 +30,6 @@ C:\Users\BilChege\Documents\NetBeansProjects\Commuteeazy\src\main\java\com\commu
 C:\Users\BilChege\Documents\NetBeansProjects\Commuteeazy\src\main\java\com\commuteeazy\commuteeazy\ServiceImpl\RolesService.java
 C:\Users\BilChege\Documents\NetBeansProjects\Commuteeazy\src\main\java\com\commuteeazy\commuteeazy\ServiceImpl\UsersService.java
 C:\Users\BilChege\Documents\NetBeansProjects\Commuteeazy\src\main\java\com\commuteeazy\commuteeazy\CustomObjects\CustomOperator.java
+C:\Users\BilChege\Documents\NetBeansProjects\Commuteeazy\src\main\java\com\commuteeazy\commuteeazy\Service\VerificationServices.java
 C:\Users\BilChege\Documents\NetBeansProjects\Commuteeazy\src\main\java\com\commuteeazy\commuteeazy\DAOHelper\UsersDAO.java
 C:\Users\BilChege\Documents\NetBeansProjects\Commuteeazy\src\main\java\com\commuteeazy\commuteeazy\DAOImpl\PlaceDAOImpl.java

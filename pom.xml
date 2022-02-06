@@ -26,6 +26,15 @@
             <id>Javaassist repository</id>
             <url>https://mvnrepository.com/artifact/org.javassist/javassist</url>
         </repository>
+        <repository>
+            <id>africastalking</id>
+            <name>AfricasTalking</name>
+            <url>http://dl.bintray.com/africastalking/java</url>
+        </repository>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
 <!--        <repository>
             <id>com.springsource.repository.bundles.release</id>
             <name>SpringSource Enterprise Bundle Repository - SpringSource Bundle Releases</name>
@@ -50,6 +59,11 @@
             <groupId>org.quartz-scheduler</groupId>
             <artifactId>quartz</artifactId>
             <version>2.2.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.AfricasTalkingLtd.africastalking-java</groupId>
+            <artifactId>core</artifactId>
+            <version>3.4.8</version>
         </dependency>
          <dependency>
             <groupId>org.quartz-scheduler</groupId>
