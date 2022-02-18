@@ -40,11 +40,11 @@ made subject to such option by the copyright holder.
 Contributor(s):
 -->
 <hibernate-reverse-engineering>
-  <schema-selection match-catalog="Commuteeazy" match-schema="public"/>
-  <table-filter match-name="roles"/>
+  <schema-selection match-catalog="commuteeazy" match-schema="public"/>
+  <table-filter match-name="matatu_operator"/>
   <table-filter match-name="place"/>
   <table-filter match-name="users"/>
-  <table-filter match-name="vehicle"/>
   <table-filter match-name="route"/>
-  <table-filter match-name="matatu_operator"/>
+  <table-filter match-name="roles"/>
+  <table-filter match-name="vehicle"/>
 </hibernate-reverse-engineering>

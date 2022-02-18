@@ -1,12 +1,10 @@
 package com.commuteeazy.commuteeazy.Domain;
-// Generated Oct 13, 2021 10:14:56 AM by Hibernate Tools 4.3.1
+// Generated Feb 18, 2022 1:14:15 PM by Hibernate Tools 4.3.1
 
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
@@ -45,8 +43,9 @@ public class Vehicle  implements java.io.Serializable {
        this.model = model;
     }
    
-     @Id
-     @GeneratedValue(strategy = GenerationType.IDENTITY)
+     @Id 
+
+    
     @Column(name="id", unique=true, nullable=false)
     public int getId() {
         return this.id;
