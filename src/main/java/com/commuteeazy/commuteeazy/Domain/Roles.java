@@ -1,5 +1,5 @@
 package com.commuteeazy.commuteeazy.Domain;
-// Generated Feb 18, 2022 1:14:15 PM by Hibernate Tools 4.3.1
+// Generated Feb 19, 2022 9:01:51 PM by Hibernate Tools 4.3.1
 
 
 import javax.persistence.Column;
