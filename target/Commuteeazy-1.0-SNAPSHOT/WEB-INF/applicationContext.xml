@@ -23,7 +23,7 @@
     
     <bean id="datasource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
         <property name="driverClassName" value="org.postgresql.Driver"></property>
-        <property name="url" value="jdbc:postgresql://localhost:5432/commuteeazy"></property>
+        <property name="url" value="jdbc:postgres://wukcxetitkmata:447d9d4382dbb6a72b4d638bcc1edbece8b839e09f83fdd77d3e408365ce85cf@ec2-3-228-222-169.compute-1.amazonaws.com:5432/d1oe3aepsmdunm"></property>
         <property name="username" value="postgres"></property>
         <property name="password" value="chege"></property>
     </bean>
